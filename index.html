@@ -1,49 +1,201 @@
-<!DOCTYPE html><!--HTML5-->
-<html><!--start of HTML-->
-<head><!--Head section-->
-    <title>Shifa</title><!--Title of page-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shifa - Resume</title>
     <meta charset="UTF-8">
-    <meta name="description"content="Shifa">
-    <meta name="keywords"content="Shifa,personal website">
-    <meta name="author"content="Shifa">
-    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Shifa's Resume Website">
+    <meta name="keywords" content="Shifa, personal website, resume, IT">
+    <meta name="author" content="Shifa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body><!--Body content-->
 
-<!--Main heading-->
-<h1>Shifa</h1>
+<body>
 
-<!--Major-->
-<p><b>Major: </b>Information Technology</p>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="profile-name">Shifa</h1>
+        <p class="profile-title">Information Technology Student</p>
+    </header>
 
-<!--Spoken Languages list-->
-<h2>Languages</h2>
-<ul>
-  <li>Thai</li>
-  <li>English</li>
-  <li>Melayu</li>
-</ul>
 
-<!--Programming Languages-->
-<h2>Programming Languages</h2>
-<ul>
-  <li>HTML</li>
-  <li>Python</li>
-  <li>C</li>
-</ul>
+    <!-- About Me -->
+    <section class="about-section">
+        <h2 class="section-title">About Me</h2>
 
-<!--Projects-->
-<h2>Projects</h2>
-<ul>
-  <li>GloFe – Global Pre-order Website</li>
-</ul>
+        <img class="profile-image"
+             src="images/profile.jpg"
+             alt="Photo of Shifa"
+             width="200">
 
-<!--Activities-->
-<h2>Activities</h2>
-<ul>
-  <li>Participateed in University Sports Day</li>
-  <li>Joined Halaqah activities</li>
-</ul>
+        <p class="about-text">
+            Hello! My name is Shifa. I am an Information Technology
+            student who is interested in technology, programming,
+            databases, and web development.
+        </p>
+    </section>
 
-</body><!--End body-->
-</html><!--End html-->
+
+    <!-- Major -->
+    <section class="major-section">
+        <h2 class="section-title">Education</h2>
+
+        <p class="major-text">
+            <b>Major:</b> Information Technology
+        </p>
+    </section>
+
+
+    <!-- Languages -->
+    <section class="languages-section">
+        <h2 class="section-title">Languages</h2>
+
+        <ul class="language-list">
+            <li>Thai</li>
+            <li>English</li>
+            <li>Melayu</li>
+        </ul>
+    </section>
+
+
+    <!-- Programming Languages -->
+    <section class="programming-section">
+        <h2 class="section-title">Programming Languages</h2>
+
+        <ul class="programming-list">
+            <li>HTML</li>
+            <li>Python</li>
+            <li>C</li>
+        </ul>
+    </section>
+
+
+    <!-- Skills Table -->
+    <section class="skills-section">
+        <h2 class="section-title">Skills</h2>
+
+        <table class="skills-table">
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>Beginner</td>
+            </tr>
+
+            <tr>
+                <td>Python</td>
+                <td>Beginner</td>
+            </tr>
+
+            <tr>
+                <td>C Programming</td>
+                <td>Beginner</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="projects-section">
+        <h2 class="section-title">Projects</h2>
+
+        <article class="project-card">
+            <h3>GloFe – Global Pre-order Website</h3>
+
+            <p>
+                A website project for a global pre-order service.
+                The project focuses on web design and user experience.
+            </p>
+
+            <a class="project-link" href="#">
+                View Project
+            </a>
+        </article>
+    </section>
+
+
+    <!-- Activities -->
+    <section class="activities-section">
+        <h2 class="section-title">Activities</h2>
+
+        <ol class="activity-list">
+            <li>Participated in University Sports Day</li>
+            <li>Joined Halaqah activities</li>
+            <li>Participated in university activities</li>
+        </ol>
+    </section>
+
+
+    <!-- Video -->
+    <section class="video-section">
+        <h2 class="section-title">My Introduction Video</h2>
+
+        <video class="intro-video" width="400" controls>
+            <source src="videos/introduction.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+
+    <!-- Audio -->
+    <section class="audio-section">
+        <h2 class="section-title">My Audio</h2>
+
+        <audio class="intro-audio" controls>
+            <source src="audio/introduction.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form class="contact-form">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <br><br>
+
+            <label for="message">Message:</label>
+            <br>
+
+            <textarea id="message"
+                      name="message"
+                      rows="5"
+                      cols="30"></textarea>
+
+            <br><br>
+
+            <button class="submit-button" type="submit">
+                Send Message
+            </button>
+
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Shifa. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
