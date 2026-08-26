@@ -142,3 +142,14 @@ body {
     padding: 20px;
     margin-top: 30px;
 }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.language-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
