@@ -1,33 +1,392 @@
 body {
-  margin: 0;
-  padding: 0;
+    background-color: #f8f9ff;
 }
 
-h2, p {
-  margin: 10px;
+
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #92d4a4;
+
+
+
+h1 {
+    font-family: "Inter", sans-serif;
+    color: rgb(17, 14, 14);
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-ul li {
-  float: left;
+
+h2 {
+    color: rgb(32, 28, 28);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
 }
 
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+
+
+h3 {
+    color: rgb(32, 28, 28);
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
 }
 
-ul li a:hover {
-  background-color: #dfdada;
+
+
+
+.mobile-menu {
+    display: none;
 }
 
+nav {
+    overflow: hidden;
+    background-color: #7f6262;
+    border-radius: 40px;
+    box-shadow: 20px 20px 40px #dedcdc,
+        -20px -20px 40px #ffffff;
+    margin: 20;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    justify-content: center;
+
+
+}
+
+nav ul li {
+    float: left;
+
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #cdb6b6;
+    box-shadow: 20px 20px 40px #afaaaa,
+        -20px -20px 40px #b3afaf;
+
+
+
+
+}
+
+
+p {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 14px 16px;
+    font-size: 1rem;
+
+}
+
+
+@media (max-width: 600px) {
+    .desktop-menu {
+        display: none
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+#Introduction {
+    min-height: 50vh;
+    padding: 50px 30px;
+    text-align: center;
+    background-color: white;
+
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        10px 10px 25px #dedcdc,
+        -10px -10px 25px #ffffff;
+}
+
+#Introduction h3 {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #7f6262;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#Introduction h4 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#Introduction p {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+#Introduction .button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #7f6262;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#Introduction .button:hover {
+    background-color: #cdb6b6;
+}
+
+#Palestinian-Governorates {
+
+   min-height: 50vh;
+    padding: 50px 30px;
+    text-align: center;
+    background-color: white;
+
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        10px 10px 25px #dedcdc,
+        -10px -10px 25px #ffffff;
+}
+
+
+#Palestinian-Governorates>h3 {
+    font-size: 2rem;
+    text-align: center;
+    background-color: #7f6262;
+    color: white;
+    border-radius: 25px;
+}
+
+#Palestinian-Governorates>p {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: justify;
+
+}
+
+.section-text {
+    max-width: 900px;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+
+
+}
+
+.cards {
+
+
+    background-color: #ffffff;
+    box-shadow: 10px 10px 25px #dedcde,
+        -10px -10px 25px #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cards h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cards img {
+    display: block;
+    object-fit: cover;
+    margin: 15px auto;
+    border-radius: 10px;
+
+}
+
+.cards h4 {
+    text-align: center;
+}
+
+.cards p {
+    text-align: justify;
+}
+
+.contact {
+    padding: 50px 30px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+
+
+}
+
+.contact h3 {
+    font-size: 2rem;
+
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #7f6262;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+
+.contact form {
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 1rem;
+}
+
+.contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact input[type="submit"] {
+    width: auto;
+    padding: 12px 30px;
+
+    background-color: #7f6262;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #cdb6b6;
+}
+
+.footer {
+    padding: 50px 30px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+
+footer p {
+    color: rgb(39, 39, 39);
+    text-align: center;
+}
+
+footer a {
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .card {
+        margin: 25px 10px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    nav {
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #Introduction {
+        min-height: 50vh;
+        padding: 40px 20px;
+    }
+
+    #Introduction p {
+        text-align: justify;
+    }
+
+    #Palestinian-Governorates {
+        padding: 40px 15px;
+    }
+
+    .card {
+        margin: 25px 0;
+        padding: 20px;
+
+    }
+
+    .contact {
+        padding: 40px 20px;
+    }
+
+}
