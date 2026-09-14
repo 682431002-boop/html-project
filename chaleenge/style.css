@@ -9,14 +9,26 @@ body {
 }
 
 
+header{
+    position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+
+} 
 
 
 h1 {
+    
     font-family: "Inter", sans-serif;
     color: rgb(17, 14, 14);
     text-align: center;
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    justify-self: center;
+    
+    
+    
 }
 
 
@@ -24,7 +36,7 @@ h2 {
     color: rgb(32, 28, 28);
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-
+ 
 }
 
 
@@ -43,51 +55,37 @@ h3 {
     display: none;
 }
 
-nav {
-    overflow: hidden;
-    background-color: #7f6262;
-    border-radius: 40px;
-    box-shadow: 20px 20px 40px #dedcdc,
-        -20px -20px 40px #ffffff;
-    margin: 20;
-}
-
-
-
-
-nav ul {
+ul {
+    
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    justify-content: center;
-
-
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1c1616;
+  justify-content: center;
+  
 }
 
-nav ul li {
-    float: left;
-
+ul li {
+  float: left;
 }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-nav ul li a:hover {
-    background-color: #cdb6b6;
-    box-shadow: 20px 20px 40px #afaaaa,
-        -20px -20px 40px #b3afaf;
-
-
-
-
+ul li a:hover {
+  background-color: #9a9595;
 }
+
+
+
+
 
 
 p {
@@ -102,14 +100,15 @@ p {
 
 @media (max-width: 600px) {
     .desktop-menu {
-        display: none
+        display: none;
     }
 
     .mobile-menu {
         display: block;
     }
-}
 
+ 
+}
 #Introduction {
     min-height: 50vh;
     padding: 50px 30px;
