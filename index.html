@@ -12,20 +12,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body >
 
-    <!-- Header -->
-    <header class="header">
-        <h1 class="profile-name">Shifa</h1>
-        <p class="profile-title">Information Technology Student</p>
-    </header>
+    <nav class="nav" aria-label="Primary">
+  <a href="#top" class="nav-brand"><span class="dot"></span>Shifa</a>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li> 
+    
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
 
     <!-- About Me -->
-    <section class="about-section">
+    <section class="about-section"id="about">
         <h2 class="section-title">About Me</h2>
-
-        
+       <img src="Screenshot 2569-09-17 at 14.18.07.png" alt="Shifa's profile photo" width="140" height="90">
 
         <p class="about-text">
             Hello! My name is Shifa. I am an Information Technology
@@ -36,7 +42,7 @@
 
 
     <!-- Major -->
-    <section class="major-section">
+    <section class="major-section" >
         <h2 class="section-title">Education</h2>
 
         <p class="major-text">
@@ -57,19 +63,11 @@
     </section>
 
 
-    <!-- Programming Languages -->
-    <section class="programming-section">
-        <h2 class="section-title">Programming Languages</h2>
-
-        <ul class="programming-list">
-            <li>HTML</li>
-            <li>C</li>
-        </ul>
-    </section>
+   
 
 
     <!-- Skills Table -->
-    <section class="skills-section">
+    <section class="skills-section"id="skills">
         <h2 class="section-title">Skills</h2>
 
         <table class="skills-table">
@@ -88,10 +86,7 @@
                 <td>Beginner</td>
             </tr>
 
-            <tr>
-                <td>Python</td>
-                <td>Beginner</td>
-            </tr>
+            
 
             <tr>
                 <td>C Programming</td>
@@ -102,7 +97,7 @@
 
 
     <!-- Projects -->
-    <section class="projects-section">
+    <section class="projects-section"id="projects">
         <h2 class="section-title">Projects</h2>
 
         <article class="project-card">
@@ -121,7 +116,7 @@
 
 
     <!-- Activities -->
-    <section class="activities-section">
+    <section class="activities-section"id="activities">
         <h2 class="section-title">Activities</h2>
 
         <ol class="activity-list">
@@ -155,7 +150,7 @@
 
 
     <!-- Contact Form -->
-    <section class="contact-section">
+    <section class="contact-section"id="contact">
         <h2 class="section-title">Contact Me</h2>
 
         <form class="contact-form">
@@ -182,6 +177,7 @@
 
             <button class="submit-button" type="submit">
                 Send Message
+                
             </button>
 
         </form>
@@ -191,24 +187,12 @@
     <!-- Footer -->
     <footer class="footer">
         <p>© 2026 Shifa. All Rights Reserved.</p>
+        <a href="#top" >Back to Top</a>
+        
     </footer>
 
 </body>
 </html>
 
-<div class="skills-container">
-    <div class="skill-item">Communication</div>
-    <div class="skill-item">Teamwork</div>
-    <div class="skill-item">Problem Solving</div>
-</div>
-<div class="projects-container">
-    <div class="project-item">
-        <h3>Project 1</h3>
-        <p>My first project</p>
-    </div>
 
-    <div class="project-item">
-        <h3>Project 2</h3>
-        <p>My second project</p>
-    </div>
-</div>
+   
