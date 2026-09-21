@@ -11,6 +11,7 @@ body {
 
 
 
+
 :root{
   --bg:#F5F4F0;
   --surface:#FFFFFF;
@@ -85,7 +86,7 @@ backdrop-filter:blur(8px);
   font-family:'Space Grotesk', sans-serif;
   
   font-weight:700; font-size:1.1rem;
-  text-decoration:none; color:var(--ink);
+  text-decoration:none; color:white;
   display:flex; align-items:center; gap:8px;
 }
 .nav-brand .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;}
@@ -94,19 +95,23 @@ backdrop-filter:blur(8px);
 }
 .nav-links a{
   display:block; padding:10px 14px; border-radius:var(--radius);
-  color:var(--ink-soft); text-decoration:none; font-size:.92rem; font-weight:500;
+  color:white; text-decoration:none; font-size:.92rem; font-weight:500;
   transition:color .15s ease, background .15s ease;
 }
 .nav-links a:hover, .nav-links a:focus-visible{
-  color:var(--ink); background:var(--accent-soft);
+  color:white; background:var(--accent-soft);
   outline:2px solid transparent;
 }
 .nav-toggle{
   display:none;
   background:none; border:1px solid var(--line); border-radius:var(--radius);
   width:40px; height:40px; cursor:pointer;
-  color:var(--ink); font-size:1.1rem;
+   font-size:1.1rem;
 }
+
+
+
+
 
 /* Sections */
 .about-section,
@@ -284,4 +289,7 @@ html {
 #contact
  {
     scroll-margin-top: 200px;
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
 }
