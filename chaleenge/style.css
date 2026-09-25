@@ -309,6 +309,7 @@ p {
     padding: 50px 30px;
     background-color: white;
     border-radius: 20px;
+    
 
 }
 
@@ -318,13 +319,11 @@ footer p {
     text-align: center;
 }
 
-footer a {
-    color: rgb(6, 6, 6);
-    text-decoration: none;
-}
+footer img {
+    position: fixed;
+    bottom: 20px;
+    
 
-footer a:hover {
-    text-decoration: underline;
 }
 
 
