@@ -241,11 +241,29 @@ p {
     text-align: justify;
 }
 
-.contact {
-    padding: 50px 30px;
+.card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
     background-color: white;
-    border-radius: 20px;
+}
+.contact {
+    
+     min-height: 50vh;
+    padding: 50px 30px;
     text-align: center;
+    background-color: white;
+
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        10px 10px 25px #dedcdc,
+        -10px -10px 25px #ffffff;
+
 
 
 }
