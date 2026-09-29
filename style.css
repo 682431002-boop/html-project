@@ -132,73 +132,28 @@ backdrop-filter:blur(8px);
 .video-section,
 .audio-section,
 .contact-section {
-    background-color: white;
+   background-color: white;
     margin: 20px auto;
     padding: 25px;
     max-width: 800px;
     border-radius: 10px;
-    box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 
 }
 
 .about-section {
     min-height: 30vh;
-     box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
-
-}
-
-.major-section {
-    
-     box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
-
-}
-.languages-section{
-    
-     box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
+     
 
 }
 
 
 
-.programming-section{
-    
-     box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
 
-}
-
-
-.skills-section{
-    
-     box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
-
-}
-
-
-.projects-section{
-    
-     box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
-
-}
 .activities-section{
     max-width: 850px;
     box-sizing: border-box;
-     box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
+     
 
     overflow: hidden;
 }
@@ -309,22 +264,6 @@ backdrop-filter:blur(8px);
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-}
-
-.video-section{
-    
-     box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
-
-}
-
-.audio-section{
-    
-     box-shadow:
-        10px 10px 25px #dedcdc,
-        -10px -10px 25px #ffffff;
-
 }
 
 
