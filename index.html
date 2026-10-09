@@ -10,8 +10,8 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
-</head>
 
+</head>
 <body >
 
     <nav class="nav" aria-label="Primary">
@@ -27,58 +27,8 @@
   </ul>
 </nav>
 
-<html>
-<head>
 
-    <style>
-        /* CSS ตรงนี้ */
-        
-        #goTopBtn {
-            display: none;
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            width: 50px;
-            height: 50px;
-            border: none;
-            border-radius: 50%;
-            background-color: #333;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-        }
-    </style>
 
-</head>
-
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-#myBtn {
-  display: none;
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    background-color: #333;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-</style>
-</head>
-<body>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 <script>
@@ -203,8 +153,8 @@ function topFunction() {
         </ol>
 
 
-</style>
-</head>
+
+
         
         <div class="slideshow-container">
 <div class="mySlides fade">
@@ -231,42 +181,16 @@ function topFunction() {
 </div>
 <br>
 
+
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="slide-dot" onclick="currentSlide(1)"></span>
+    <span class="slide-dot" onclick="currentSlide(2)"></span>
+    <span class="slide-dot" onclick="currentSlide(3)"></span>
 </div>
 
 
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
     </section>
 
 
@@ -292,81 +216,80 @@ function showSlides(n) {
     </section>
 
 
-    <!-- Contact Form -->
-    <section class="contact-section"id="contact">
-        <h2 class="section-title">Contact Me</h2>
+   
+<!-- Contact Form -->
+<section class="contact-section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
 
-        <form class="contact-form">
+    <form class="contact-form" id="contactForm">
+        <label for="name">Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            pattern="[A-Za-zก-๙\s]{2,50}"
+            title="Enter a name using letters and spaces (2-50 characters)"
+            required
+        >
 
-            <label for="name">Name:</label>
-            <input type="text" 
-            id="name" name="name">
+        <label for="email">Email address:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[A-Za-z0-9._%+-]+@ftu\.ac\.th"
+            placeholder="student@ftu.ac.th"
+            title="Please use your FTU email address"
+            required
+        >
 
-            <br><br><label for="email address">Email address:</label><br>
-    <input 
-    type="text" 
-    id="email address" 
-    name="email address"
-    pattern="[A-Z a-z 0-9 - . ! # \$ % & ' * + / = ? ^ _  { | } ~`"]+@ftu\.ac\.th
-    placeholder="student@ftu.ac.th"
-    required>
-    <br>
-            <br>
+        <label for="phone">Phone number:</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="0987654321"
+            title="Enter exactly 10 digits"
+            required
+        >
 
-            <label for="message">Message:</label>
-            <br>
+        <label for="message">Message:</label>
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            maxlength="1000"
+            required
+        ></textarea>
 
-            <textarea id="message"
-                      name="message"
-                      rows="5"
-                      cols="30"></textarea>
+        <button class="submit-button" type="submit">
+            Send Message
+        </button>
 
-            
-            <br>
-    <br><label for="phone number">Phone number:</label><br>
-    <input 
-    type="tel" 
-    id="phone" 
-    name="phone"
-    pattern="[0-9]{10}"
-    placeholder="0987654321"
-    required>
-    <br>
-
-
-            <br><button class="submit-button" type="submit">
-                Send Message
-                
-            </button>
-
-        </form>
-    </section>
+        <p id="formStatus" role="status"></p>
+    </form>
+</section>
 
 
+<!-- Visitor Counter -->
+<p class="visitor-counter">
+    Website Visits: <span id="visitorCount">0</span>
+</p>
+
+<!-- Go to Top Button -->
+<button id="goTopBtn" type="button"
+        aria-label="Go to top" title="Go to top">
+    ↑
+</button>
+    
     <!-- Footer -->
     <footer class="footer">
         <p>© 2026 Shifa. All Rights Reserved.</p>
-        
-        
     </footer>
 
-<script>
-  const toggle = document.getElementById('navToggle');
-  const links = document.getElementById('navLinks');
-  toggle.addEventListener('click', () => {
-    const open = links.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    links.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }));
-</script>
-
-
-</head>
-
-
+    <!-- Link JavaScript -->
+    <script src="script.js" defer></script>
 </body>
 </html>
 
