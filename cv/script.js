@@ -129,3 +129,72 @@ function currentSlide(n) {
 }
 
 showSlides(slideIndex);
+
+async function updateLocalClock() {
+    const cityElement = document.getElementById("clockCity");
+    const timeElement = document.getElementById("clockTime");
+    const dateElement = document.getElementById("clockDate");
+    const statusElement = document.getElementById("clockStatus");
+
+    const timeZone =
+        Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    const city = timeZone.split("/").pop().replace(/_/g, " ");
+
+    cityElement.textContent = `${city} (${timeZone})`;
+
+    function showClock() {
+        const now = new Date();
+
+        timeElement.textContent =
+            new Intl.DateTimeFormat("en-GB", {
+                timeZone,
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false
+            }).format(now);
+
+        dateElement.textContent =
+            new Intl.DateTimeFormat("en-GB", {
+                timeZone,
+                dateStyle: "full"
+            }).format(now);
+    }
+
+    try {
+        const apiUrl =
+    "https://timeapi.io/api/Time/current/zone?timeZone=Asia%2FBangkok";
+
+console.log("Fetching time from:", apiUrl);
+
+const response = await fetch(apiUrl);
+        if (!response.ok) {
+            throw new Error(`API error: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+       if (!data.dateTime || !data.timeZone) {
+    console.log("API response:", data);
+    throw new Error("Invalid API response");
+}
+
+        showClock();
+
+        statusElement.textContent =
+            "Timezone data loaded using Fetch API.";
+
+    } catch (error) {
+        console.error("Clock API error:", error);
+
+        showClock();
+
+        statusElement.textContent =
+            "Showing device time. Time API is unavailable.";
+    }
+
+    setInterval(showClock, 1000);
+}
+
+updateLocalClock();
