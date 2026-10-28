@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shifa - Resume</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Shifa's Resume Website">
+    <meta name="keywords" content="Shifa, personal website, resume, IT">
+    <meta name="author" content="Shifa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+
+  <link rel="stylesheet" crossorigin href="/assets/index-B53oMAi_.css">
+</head>
+<body >
+
+    <nav class="nav" aria-label="Primary">
+  <a href="#top" class="nav-brand"><span class="dot"></span>Shifa</a>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label=
+  "Toggle menu">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li> 
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+    <!-- About Me -->
+    <section class="about-section" id="about">
+
+        <h2 class="section-title text-3xl font-bold text-center text-blue-700">
+    About Me
+</h2>
+
+
+       <img src="/assets/Screenshot%202569-09-17%20at%2014.18.07-NQ4_3AFu.png" alt="Shifa's profile photo" width="140" height="90">
+
+        <p class="about-text">
+            <br><br>Hello! My name is Shifa. I am an Information Technology
+            student who is interested in technology, programming,
+            databases, and web development.
+        </p>
+    </section>
+
+
+    <!-- Major -->
+    <section class="major-section" >
+        <h2 class="section-title">Education</h2>
+
+        <p class="major-text">
+            <b>Major:</b> Information Technology
+        </p>
+    </section>
+
+
+    <!-- Languages -->
+    <section class="languages-section">
+        <h2 class="section-title">Languages</h2>
+
+        <ul class="language-list">
+            <li>Thai</li>
+            <li>English</li>
+            <li>Melayu</li>
+        </ul>
+    </section>
+
+
+   
+
+
+    <!-- Skills Table -->
+    <section class="skills-section"id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <table class="skills-table">
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>Beginner</td>
+            </tr>
+
+            
+
+            <tr>
+                <td>C Programming</td>
+                <td>Beginner</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="projects-section"id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <article class="project-card">
+            <h3>GloFe – Global Pre-order Website</h3>
+
+            <p>
+                A website project for a global pre-order service.
+                The project focuses on web design and user experience.
+            </p>
+
+            <a class="project-link" href="#">
+                View Project
+            </a>
+        </article>
+    </section>
+
+
+    <!-- Activities -->
+    <section class="activities-section"id="activities">
+        <h2 class="section-title">Activities</h2>
+
+        <ol class="activity-list">
+            <li>Participated in University Sports Day</li>
+            <li>Joined Halaqah activities</li>
+            <li>Participated in university activities</li>
+        </ol>
+
+
+
+
+        
+        <div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="/assets/IMG_7784-C8a9eR7y.JPG" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="/assets/fxn%202026-05-10%201643053D72BB0E5A5B-BuESqPkf.JPG" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="/assets/sportday-B1uC2Vh0.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+
+<div style="text-align:center">
+    <span class="slide-dot" onclick="currentSlide(1)"></span>
+    <span class="slide-dot" onclick="currentSlide(2)"></span>
+    <span class="slide-dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+
+    </section>
+
+
+    <!-- Video -->
+    <section class="video-section">
+        <h2 class="section-title">My Introduction Video</h2>
+
+        <video class="intro-video" width="400" controls>
+            <source src="videos/introduction.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+
+    <!-- Audio -->
+    <section class="audio-section">
+        <h2 class="section-title">My Audio</h2>
+
+        <audio class="intro-audio" controls>
+            <source src="audio/introduction.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+
+   
+<!-- Contact Form -->
+<section class="contact-section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <form class="contact-form" id="contactForm">
+        <label for="name">Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            pattern="[A-Za-zก-๙\s]{2,50}"
+            title="Enter a name using letters and spaces (2-50 characters)"
+            required
+        >
+
+        <label for="email">Email address:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[A-Za-z0-9._%+-]+@ftu\.ac\.th"
+            placeholder="student@ftu.ac.th"
+            title="Please use your FTU email address"
+            required
+        >
+
+        <label for="phone">Phone number:</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="0987654321"
+            title="Enter exactly 10 digits"
+            required
+        >
+
+        <label for="message">Message:</label>
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            maxlength="1000"
+            required
+        ></textarea>
+
+        <button class="submit-button" type="submit">
+            Send Message
+        </button>
+
+        <p id="formStatus" role="status"></p>
+    </form>
+</section>
+
+
+<!-- Visitor Counter -->
+<p class="visitor-counter">
+    Website Visits: <span id="visitorCount">0</span>
+</p>
+
+<!-- Go to Top Button -->
+<button id="goTopBtn" type="button"
+        aria-label="Go to top" title="Go to top">
+    ↑
+</button>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Shifa. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
+   
